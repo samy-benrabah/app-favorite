@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FF0000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', Arial, sans-serif;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #282828;
+    position: fixed;
+    width: 100%;
+}
+
+#nav {
+    color: white;
+    transition: 0.5s;
+}
+
+#nav:hover {
+    transform: scale(1.15);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.image-facebook {
+    background-image: url(https://c2g8v2d7.rocketcdn.me/wp-content/uploads/2019/07/fonctionnalites-facebook.png);
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    border-radius: 3%;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.image-snapchat {
+    background-image: url(https://www.snapchat.com/global/social-lg.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    border-radius: 3%;
+}
+
+.image-youtube {
+    background-image: url(https://www.poitooadhesifs.com/app/uploads/2020/08/youtube-banner.png);
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    border-radius: 3%;
+}
+
+iframe {
+    margin-top: 5.5vh;
+    padding: 0;
+}
+
+main {
+    color: white;
+}
+
+.vue-date {
+    display: flex;
+    text-indent: 2px;
+}
+
+.sharp-titre {
+    margin-block-start: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.sous-bloc-like-etc {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    width: max-content;
+}
+
+i {
+    transition: 0.5s;
+    cursor: grab;
+}
+
+i:hover {
+    background-color: white;
+    border-radius: 30%;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 6vh;
+    transition: 0.4s;
+}
+
+.titre-video-bloc1 {
+    width: 100vh;
+}
+
+.lacrim {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 500vh;
+}
+
+.img-txt {
+    display: flex;
+    flex-direction: row;
+}
+
+.txt-artiste {
+    list-style: none;
+}
+
+.abonné {
+    color: gray;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: row;
+}
+
+.sous-bloc1 {
+    border: solid black 2px;
+    width: min-content;
+    background-color: #282828;
+}
+
+.scroll-up {
+    height: 50vh;
+    width: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #FF0000;
+    color: white;
+}
+
+.scroll-up p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-up 15s linear infinite;
+    -webkit-animation: scroll-up 15s linear infinite;
+    animation: scroll-up 15s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@-moz-keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(100%);
+        /* Browser bug fix */
+        transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-100%);
+        /* Browser bug fix */
+        transform: translateY(-100%);
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook-img {
+    height: 50px;
+    width: 50px;
+    background-color: #4267B2;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.facebook-img:hover {
+    transform: rotate(-60deg);
+}
+
+.git {
+    height: 50px;
+    width: 50px;
+    background-color: #ccc2c2;
+    border: solid 2px #4C4C4C;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.git:hover {
+    transform: rotate(60deg);
+}
+
+.instagram {
+    height: 50px;
+    width: 50px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: solid 2px #4C4C4C;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.instagram:hover {
+    transform: rotate(-60deg);
+}
+
+.twitter {
+    height: 50px;
+    width: 50px;
+    background-color: #1DA1F2;
+    border: solid 2px #4C4C4C;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.twitter:hover {
+    transform: rotate(60deg);
+}
+
+.txt-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-page {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border: solid black 2px;
+    background-color: #282828;
+    color: white;
+}

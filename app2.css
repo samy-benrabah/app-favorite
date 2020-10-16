@@ -1,0 +1,321 @@
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #FFFC00;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Poppins', sans-serif;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 35px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #bfc5d1;
+        position: fixed;
+        width: 100%;
+    }
+    
+    #nav {
+        color: black;
+        transition: 0.5s;
+    }
+    
+    #nav:hover {
+        transform: scale(1.15);
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+    
+    .image-facebook {
+        background-image: url(https://c2g8v2d7.rocketcdn.me/wp-content/uploads/2019/07/fonctionnalites-facebook.png);
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        border-radius: 3%;
+    }
+    
+    .container {
+        position: relative;
+        width: 60%;
+    }
+    
+    .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .image-snapchat {
+        background-image: url(https://www.snapchat.com/global/social-lg.jpg);
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        border-radius: 3%;
+    }
+    
+    .image-youtube {
+        background-image: url(https://www.poitooadhesifs.com/app/uploads/2020/08/youtube-banner.png);
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        border-radius: 3%;
+    }
+    
+    main {
+        height: 100%;
+        width: 100%;
+    }
+    
+    section {
+        /* margin-bottom: auto; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+    }
+    
+    .titre {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-titre {
+        display: flex;
+        align-self: center;
+        font-size: 25vh;
+        width: 25vh;
+        color: white;
+    }
+    
+    .logo-titre:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+    
+    .txt-presentation {
+        font-size: 20px;
+        height: 15%;
+        width: 50%;
+    }
+    
+    .bloc-txt-presentation {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bloc2 {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sous-bloc2 {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bloc-img1 {
+        display: flex;
+        height: 100%;
+        width: 50%;
+    }
+    
+    .img1 {
+        background: url("Image/img-snap1.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 50%;
+        transition: 0.6s;
+    }
+    
+    .img1:hover {
+        transform: scale(1.2);
+    }
+    
+    .bloc-img2 {
+        display: flex;
+        justify-content: center;
+        height: 60%;
+        width: 50%;
+        margin-top: 10%;
+    }
+    
+    .img2 {
+        transition: 0.6s;
+    }
+    
+    .img2-int {
+        height: 60vh;
+        width: 35vh;
+        border-radius: 10%;
+    }
+    
+    .img2:hover {
+        transform: scale(1.2);
+    }
+    
+    .bloc-img3 {
+        display: flex;
+        justify-content: flex-end;
+        height: 100vh;
+        width: 50%;
+    }
+    
+    .img3 {
+        background: url("Image/img-snap3.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 50%;
+        transition: 0.6s;
+    }
+    
+    .img3:hover {
+        transform: scale(1.2);
+    }
+    
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .facebook-img {
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border-radius: 10%;
+        transition: 0.5s;
+    }
+    
+    .facebook-img:hover {
+        transform: rotate(-60deg);
+    }
+    
+    .git {
+        height: 50px;
+        width: 50px;
+        background-color: #ccc2c2;
+        border: solid 2px #4C4C4C;
+        border-radius: 10%;
+        transition: 0.5s;
+    }
+    
+    .git:hover {
+        transform: rotate(60deg);
+    }
+    
+    .instagram {
+        height: 50px;
+        width: 50px;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        border: solid 2px #4C4C4C;
+        border-radius: 10%;
+        transition: 0.5s;
+    }
+    
+    .instagram:hover {
+        transform: rotate(-60deg);
+    }
+    
+    .twitter {
+        height: 50px;
+        width: 50px;
+        background-color: #1DA1F2;
+        border: solid 2px #4C4C4C;
+        border-radius: 10%;
+        transition: 0.5s;
+    }
+    
+    .twitter:hover {
+        transform: rotate(60deg);
+    }
+    
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .txt-footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-page {
+        border: solid black 2px;
+        background-color: dimgrey;
+        color: white;
+    }
